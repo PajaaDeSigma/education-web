@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mengenal Kabel UTP — Materi Jaringan Komputer</title>
+<meta name="description" content="Penjelasan lengkap kabel UTP, urutan warna T568A/T568B, materi PPT dan video pembelajaran.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true">
+  <span class="orb orb-a"></span>
+  <span class="orb orb-b"></span>
+  <span class="orb orb-c"></span>
+  <div class="grid-lines"></div>
+</div>
+
+<header class="navbar">
+  <div class="nav-inner glass">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <img src="img/logo.png" alt="Logo" id="siteLogo">
+        <span class="brand-fallback">UTP</span>
+      </span>
+      <span class="brand-text">Kabel Jaringan</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#pengertian">Pengertian</a>
+      <a href="#susunan">Susunan Warna</a>
+      <a href="#materi">Materi</a>
+      <a href="#profil">Profil</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow-none">Jaringan Komputer &middot; Kabel Tembaga Berpilin</p>
+      <h1>Kabel UTP, jalur data<br>yang menghubungkan segalanya.</h1>
+      <p class="hero-lead">Unshielded Twisted Pair adalah kabel dengan empat pasang inti tembaga yang dipilin, dipakai untuk menyambungkan komputer, switch, dan perangkat jaringan lain lewat konektor RJ-45.</p>
+      <div class="hero-actions">
+        <a href="#susunan" class="btn btn-primary">Lihat urutan warna</a>
+        <a href="#materi" class="btn btn-ghost">Buka materi belajar</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 440 220" class="cable-art">
+        <defs>
+          <linearGradient id="jacket" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0b1c3a"/>
+            <stop offset="1" stop-color="#1d4ed8"/>
+          </linearGradient>
+          <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#8fe3ff"/>
+            <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- outer jacket -->
+        <path class="jacket" d="M14 168 C 90 168, 112 106, 190 106 S 292 84, 330 84" fill="none" stroke="url(#jacket)" stroke-width="30" stroke-linecap="round"/>
+
+        <!-- twisted strands -->
+        <path class="strand strand-1" d="M14 162 C 90 162, 112 100, 190 100 S 292 78, 330 78" fill="none" stroke="#f97316" stroke-width="3.2" stroke-linecap="round"/>
+        <path class="strand strand-2" d="M14 166 C 90 166, 112 104, 190 104 S 292 82, 330 82" fill="none" stroke="#f8fafc" stroke-width="3.2" stroke-linecap="round"/>
+        <path class="strand strand-3" d="M14 170 C 90 170, 112 108, 190 108 S 292 86, 330 86" fill="none" stroke="#22c55e" stroke-width="3.2" stroke-linecap="round"/>
+        <path class="strand strand-4" d="M14 174 C 90 174, 112 112, 190 112 S 292 90, 330 90" fill="none" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round"/>
+
+        <!-- travelling signal pulse -->
+        <circle class="pulse" r="7" fill="url(#pulseGlow)"/>
+
+        <!-- RJ-45 connector body -->
+        <path d="M330 62 h78 a8 8 0 0 1 8 8 v36 a8 8 0 0 1 -8 8 h-78 z" fill="#0e2547" stroke="#3b6fc9" stroke-width="2"/>
+        <path d="M330 58 h26 v-8 a4 4 0 0 1 4 -4 h12 a4 4 0 0 1 4 4 v8 h24" fill="none" stroke="#3b6fc9" stroke-width="2"/>
+
+        <!-- pins -->
+        <g class="pins">
+          <rect x="344" y="70" width="5" height="32"/>
+          <rect x="352" y="70" width="5" height="32"/>
+          <rect x="360" y="70" width="5" height="32"/>
+          <rect x="368" y="70" width="5" height="32"/>
+          <rect x="376" y="70" width="5" height="32"/>
+          <rect x="384" y="70" width="5" height="32"/>
+          <rect x="392" y="70" width="5" height="32"/>
+          <rect x="400" y="70" width="5" height="32"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PENGERTIAN -->
+  <section id="pengertian" class="section">
+    <div class="section-head">
+      <h2>Apa itu kabel UTP?</h2>
+      <p>Empat pasang kabel, satu pelindung plastik, dan peran besar di setiap jaringan lokal.</p>
+    </div>
+    <div class="card-grid three">
+      <article class="glass card">
+        <h3>Struktur fisik</h3>
+        <p>UTP terdiri dari 8 kabel tembaga tipis yang dipilin berpasangan menjadi 4 pasang. Pilinan ini mengurangi interferensi elektromagnetik antar pasangan tanpa memerlukan lapisan pelindung logam (shield), sehingga kabel tetap tipis, ringan, dan murah untuk dipasang.</p>
+      </article>
+      <article class="glass card">
+        <h3>Kategori umum</h3>
+        <p>Cat5e mendukung 1 Gbps hingga 100 meter, Cat6 mendukung 1 Gbps dengan interferensi lebih rendah dan bisa 10 Gbps di jarak pendek, sedangkan Cat6a dan Cat7 dirancang untuk kebutuhan gigabit tinggi pada jaringan kantor dan pusat data.</p>
+      </article>
+      <article class="glass card">
+        <h3>Konektor RJ-45</h3>
+        <p>Setiap ujung kabel UTP dipasangi konektor RJ-45 dengan 8 pin. Urutan warna kabel pada pin inilah yang menentukan apakah kabel berfungsi sebagai kabel straight-through atau cross-over.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SUSUNAN WARNA -->
+  <section id="susunan" class="section">
+    <div class="section-head">
+      <h2>Tata cara dan urutan warna kabel</h2>
+      <p>Dua standar pemasangan pin, T568A dan T568B, jadi dasar semua jenis penyambungan kabel UTP.</p>
+    </div>
+
+    <div class="standard-grid">
+      <div class="glass card standard-card" data-standard="a">
+        <div class="standard-title">
+          <h3>T568A</h3>
+        </div>
+        <ol class="pin-list" id="pinListA"></ol>
+      </div>
+      <div class="glass card standard-card" data-standard="b">
+        <div class="standard-title">
+          <h3>T568B</h3>
+        </div>
+        <ol class="pin-list" id="pinListB"></ol>
+      </div>
+    </div>
+
+    <div class="steps-block glass card">
+      <h3>Langkah membuat kabel UTP</h3>
+      <ol class="steps">
+        <li><span>Kupas jaket luar</span> kabel sepanjang 2–3 cm menggunakan crimping tool atau cutter, hati-hati agar inti kabel di dalam tidak tergores.</li>
+        <li><span>Uraikan dan luruskan</span> 4 pasang kabel yang masih terpilin, lalu pisahkan menjadi 8 helai kabel tunggal.</li>
+        <li><span>Urutkan warna</span> sesuai standar T568A atau T568B, tergantung jenis kabel yang ingin dibuat, lalu ratakan ujungnya dan potong rapi.</li>
+        <li><span>Masukkan ke konektor RJ-45</span> dengan posisi pin menghadap ke atas, pastikan setiap kabel masuk sampai ke ujung pin.</li>
+        <li><span>Crimping</span> konektor menggunakan crimping tool sampai terdengar bunyi klik, agar pin menembus dan mengunci setiap kabel.</li>
+        <li><span>Uji kabel</span> menggunakan LAN tester untuk memastikan seluruh 8 pin menyala berurutan dan tidak ada kabel yang putus atau salah pasang.</li>
+      </ol>
+    </div>
+
+    <div class="type-grid">
+      <div class="glass card type-card">
+        <h4>Kabel Straight-Through</h4>
+        <p>Kedua ujung memakai standar yang sama (T568B–T568B, atau T568A–T568A). Dipakai untuk menghubungkan dua perangkat berbeda jenis, misalnya PC ke switch, atau switch ke router.</p>
+      </div>
+      <div class="glass card type-card">
+        <h4>Kabel Cross-Over</h4>
+        <p>Satu ujung T568A, ujung lain T568B. Dipakai untuk menghubungkan dua perangkat sejenis secara langsung, misalnya PC ke PC, atau switch ke switch, tanpa perangkat tambahan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERI -->
+  <section id="materi" class="section">
+    <div class="section-head">
+      <h2>Materi pembelajaran</h2>
+      <p>Simpan tautan slide dan video di sini, tersimpan otomatis di perangkat ini.</p>
+    </div>
+    <div class="card-grid two">
+      <article class="glass card resource-card">
+        <div class="resource-icon" aria-hidden="true">▤</div>
+        <h3>File Presentasi (PPT)</h3>
+        <p>Tempel tautan Google Slides, PowerPoint Online, atau drive penyimpanan lainnya.</p>
+        <div class="link-field">
+          <input type="url" id="pptLink" placeholder="https://...">
+          <button type="button" class="btn btn-small" data-save="ppt">Simpan</button>
+        </div>
+        <a href="#" id="pptOpen" class="resource-open" target="_blank" rel="noopener">Belum ada tautan tersimpan</a>
+      </article>
+      <article class="glass card resource-card">
+        <div class="resource-icon" aria-hidden="true">▶</div>
+        <h3>Video Pembelajaran</h3>
+        <p>Tempel tautan YouTube atau platform video lain yang berisi praktik pemasangan kabel.</p>
+        <div class="link-field">
+          <input type="url" id="videoLink" placeholder="https://...">
+          <button type="button" class="btn btn-small" data-save="video">Simpan</button>
+        </div>
+        <a href="#" id="videoOpen" class="resource-open" target="_blank" rel="noopener">Belum ada tautan tersimpan</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="section">
+    <div class="section-head">
+      <h2>Profil</h2>
+      <p>Foto dosen bisa diklik untuk diganti, foto mahasiswa diambil dari folder <code>img</code>.</p>
+    </div>
+
+    <div class="lecturer-wrap">
+      <article class="glass card person-card lecturer" data-person="dosen">
+        <button class="avatar" type="button" data-photo="dosen">
+          <img src="img/dosen.png" alt="Foto dosen pengampu" id="photo-dosen">
+          <span class="avatar-fallback">Foto</span>
+        </button>
+        <div class="person-info">
+          <span class="person-role">Dosen Pengampu</span>
+          <h3 class="person-name" contenteditable="true" data-field="name">Dr. Ali Firdaus, S.Kom., M.Kom</h3>
+          <p class="person-sub" contenteditable="true" data-field="sub">Mata Kuliah Jaringan Komputer</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="card-grid students">
+      <article class="glass card person-card">
+        <span class="avatar avatar-static">
+          <img src="img/mahasiswa.jpg" alt="Foto mahasiswa" id="studentPhoto">
+          <span class="avatar-fallback">Foto</span>
+        </span>
+        <div class="person-info">
+          <h3 class="person-name">Faza Ibni Fitriansyah</h3>
+          <p class="person-sub">062640723196</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Materi pembelajaran kabel UTP — dibuat untuk kebutuhan perkuliahan.</p>
+</footer>
+
+<input type="file" id="photoInput" accept="image/*" hidden>
+
+<script src="script.js"></script>
+</body>
+</html>
