@@ -268,7 +268,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 .type-card p { font-size: 14px; }
 
 /* ---------- resources ---------- */
-.resource-card { display: flex; flex-direction: column; gap: 10px; }
+.resource-card { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
 .resource-icon {
   width: 40px; height: 40px;
   display: grid; place-items: center;
@@ -278,20 +278,7 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
   font-size: 18px;
   margin-bottom: 4px;
 }
-.link-field { display: flex; gap: 8px; margin-top: 6px; }
-.link-field input {
-  flex: 1;
-  min-width: 0;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text-primary);
-  font-size: 13.5px;
-}
-.link-field input:focus { outline: 2px solid var(--cyan); outline-offset: 1px; }
-.resource-open { font-size: 13.5px; color: var(--text-muted); }
-.resource-open.active { color: var(--cyan); font-weight: 600; }
+.resource-btn { margin-top: 8px; padding-left: 26px; padding-right: 26px; }
 
 /* ---------- profile ---------- */
 .lecturer-wrap { margin-bottom: 20px; }
@@ -350,5 +337,4 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 @media (max-width: 480px) {
   .card-grid.students { grid-template-columns: 1fr 1fr; gap: 12px; }
   .lecturer { flex-direction: column; text-align: center; }
-  .link-field { flex-direction: column; }
 }

@@ -51,30 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPins(document.getElementById("pinListA"), T568A);
   renderPins(document.getElementById("pinListB"), T568B);
 
-  /* ---------- link materi (ppt / video) ---------- */
-  function setupResourceLink(inputId, openId, storageKey) {
-    const input = document.getElementById(inputId);
-    const open = document.getElementById(openId);
-    const saved = store.get(storageKey, "");
-    if (saved) {
-      input.value = saved;
-      open.href = saved;
-      open.textContent = "Buka tautan tersimpan";
-      open.classList.add("active");
-    }
-    const saveBtn = document.querySelector(`[data-save="${storageKey}"]`);
-    saveBtn.addEventListener("click", () => {
-      const url = input.value.trim();
-      if (!url) return;
-      store.set(storageKey, url);
-      open.href = url;
-      open.textContent = "Buka tautan tersimpan";
-      open.classList.add("active");
-    });
-  }
-  setupResourceLink("pptLink", "pptOpen", "ppt");
-  setupResourceLink("videoLink", "videoOpen", "video");
-
   /* ---------- logo situs (dari folder img/) ---------- */
   const siteLogo = document.getElementById("siteLogo");
   if (siteLogo) {
